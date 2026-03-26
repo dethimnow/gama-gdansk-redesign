@@ -33,8 +33,66 @@ body {
 
 .grid-motion-bg {
   background-image:
-    linear-gradient(rgba(15, 23, 42, 0.06) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(15, 23, 42, 0.06) 1px, transparent 1px);
+    linear-gradient(rgba(15, 23, 42, 0.07) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(15, 23, 42, 0.07) 1px, transparent 1px);
   background-size: 64px 64px;
-  mask-image: radial-gradient(ellipse 80% 60% at 50% 0%, black, transparent);
+  mask-image: radial-gradient(ellipse 85% 70% at 50% 20%, black, transparent);
+}
+
+.hero-grid-drift {
+  animation: hero-grid-drift 28s linear infinite;
+}
+
+@keyframes hero-grid-drift {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 64px 64px;
+  }
+}
+
+/* Zdjęcia: wyższy kontrast i nasycenie */
+.photo-pop {
+  filter: contrast(1.14) saturate(1.32) brightness(1.03);
+}
+
+.photo-pop-strong {
+  filter: contrast(1.18) saturate(1.42) brightness(1.04);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-grid-drift {
+    animation: none;
+  }
+
+  .marquee-track {
+    animation: none;
+  }
+}
+
+.marquee-mask {
+  mask-image: linear-gradient(
+    90deg,
+    transparent,
+    black 8%,
+    black 92%,
+    transparent
+  );
+}
+
+.marquee-track {
+  display: flex;
+  width: max-content;
+  gap: 3rem;
+  animation: marquee-scroll 32s linear infinite;
+}
+
+@keyframes marquee-scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
 }
