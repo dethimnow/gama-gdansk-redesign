@@ -4,7 +4,6 @@ export const site = {
   description:
     "Transport międzynarodowy i krajowy, transport HDS, podesty ruchome, prace ziemne. GAMA SP Z O.O. Straszyn.",
   facebook: "https://www.facebook.com/Gama-Marek-Hinc-Spj-111066566258591/",
-  legacy: "https://gama-gdansk.pl/",
 } as const;
 
 export const nav = [

@@ -31,13 +31,7 @@ export function SiteFooter() {
         </div>
       </div>
       <div className="border-t border-slate-100 py-6 text-center text-xs text-slate-500">
-        © {new Date().getFullYear()} GAMA — treści zgodnie z{" "}
-        <a
-          href={site.legacy}
-          className="underline decoration-slate-300 underline-offset-2 hover:text-slate-800"
-        >
-          gama-gdansk.pl
-        </a>
+        © {new Date().getFullYear()} GAMA SP Z O.O. Wszelkie prawa zastrzeżone.
       </div>
     </footer>
   );
