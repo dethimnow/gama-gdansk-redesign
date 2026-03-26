@@ -19,8 +19,7 @@ export function SiteHeader() {
           aria-label={`${site.name} — strona główna`}
           className="flex shrink-0 items-center rounded-lg py-1 outline-offset-4 focus-visible:outline focus-visible:outline-2 focus-visible:outline-red-600"
         >
-          <LogoGama size="sm" className="sm:hidden" />
-          <LogoGama size="md" className="hidden sm:inline-flex" />
+          <LogoGama />
         </Link>
 
         <nav className="hidden items-center gap-1 lg:flex" aria-label="Główne">
