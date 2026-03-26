@@ -11,11 +11,7 @@ export const metadata = {
 export default function DokumentyPage() {
   return (
     <main className="flex-1">
-      <PageHero
-        title="Dokumenty"
-        subtitle="Skany dokumentów udostępnione na podstawie strony źródłowej klienta."
-        imageUrl={assets.heroStrip}
-      />
+      <PageHero title="Dokumenty" imageUrl={assets.heroStrip} />
 
       <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6 sm:py-24">
         <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
