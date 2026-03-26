@@ -1,11 +1,11 @@
 @import "tailwindcss";
 
 :root {
-  --background: #070a10;
-  --foreground: #e8edf5;
-  --muted: #8b9cb3;
-  --accent: #fbbf24;
-  --surface: #0f1419;
+  --background: #f4f6f9;
+  --foreground: #0f172a;
+  --muted: #475569;
+  --accent: #dc2626;
+  --surface: #ffffff;
 }
 
 @theme inline {
@@ -17,6 +17,7 @@
 
 html {
   scroll-behavior: smooth;
+  color-scheme: light;
 }
 
 body {
@@ -26,14 +27,14 @@ body {
 }
 
 ::selection {
-  background: rgba(251, 191, 36, 0.25);
-  color: #fff;
+  background: rgba(220, 38, 38, 0.15);
+  color: #0f172a;
 }
 
 .grid-motion-bg {
   background-image:
-    linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+    linear-gradient(rgba(15, 23, 42, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(15, 23, 42, 0.06) 1px, transparent 1px);
   background-size: 64px 64px;
   mask-image: radial-gradient(ellipse 80% 60% at 50% 0%, black, transparent);
 }

@@ -18,9 +18,9 @@ export default function PraceZiemnePage() {
 
       <div className="mx-auto max-w-6xl space-y-16 px-4 py-16 sm:px-6 sm:py-24">
         <FadeUp>
-          <p className="text-lg leading-relaxed text-slate-400">
+          <p className="text-lg leading-relaxed text-slate-600">
             {praceZiemne.leadIntro}
-            <strong className="font-semibold text-slate-200">
+            <strong className="font-semibold text-slate-900">
               {praceZiemne.leadHighlight}
             </strong>
             {praceZiemne.leadRest}
@@ -30,11 +30,11 @@ export default function PraceZiemnePage() {
         <div className="grid gap-4 sm:grid-cols-3">
           {praceZiemne.pillars.map((pillar, i) => (
             <FadeUp key={pillar.title} delay={0.06 * i}>
-              <div className="h-full rounded-2xl border border-white/10 bg-white/[0.02] p-6">
-                <h3 className="font-[family-name:var(--font-syne)] text-lg font-bold text-white">
+              <div className="h-full rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+                <h3 className="font-[family-name:var(--font-syne)] text-lg font-bold text-slate-900">
                   {pillar.title}
                 </h3>
-                <p className="mt-2 text-sm text-slate-400">{pillar.desc}</p>
+                <p className="mt-2 text-sm text-slate-600">{pillar.desc}</p>
               </div>
             </FadeUp>
           ))}

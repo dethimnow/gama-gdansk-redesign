@@ -20,7 +20,7 @@ export default function GaleriaPage() {
                 href={src}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group block overflow-hidden rounded-xl border border-white/10"
+                className="group block overflow-hidden rounded-xl border border-slate-200 bg-white shadow-sm"
               >
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img

@@ -18,7 +18,7 @@ export default function PodestyPage() {
         <div className="space-y-6">
           {podesty.paragraphs.map((p, i) => (
             <FadeUp key={i} delay={0.05 * i}>
-              <p className="text-lg leading-relaxed text-slate-400">{p}</p>
+              <p className="text-lg leading-relaxed text-slate-600">{p}</p>
             </FadeUp>
           ))}
         </div>
@@ -26,7 +26,7 @@ export default function PodestyPage() {
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {podesty.gallery.map((src, i) => (
             <FadeUp key={src} delay={0.04 * i}>
-              <div className="relative aspect-[3/4] overflow-hidden rounded-xl border border-white/10">
+              <div className="relative aspect-[3/4] overflow-hidden rounded-xl border border-slate-200 shadow-sm">
                 <Image
                   src={src}
                   alt="Podnośnik koszowy"

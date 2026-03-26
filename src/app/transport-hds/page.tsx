@@ -19,9 +19,9 @@ export default function TransportHdsPage() {
           <div className="space-y-6">
             {transportHds.body.map((p, i) => (
               <FadeUp key={i} delay={0.04 * i}>
-                <p className="text-lg leading-relaxed text-slate-400">
+                <p className="text-lg leading-relaxed text-slate-600">
                   {i === 2 ? (
-                    <strong className="font-semibold text-slate-200">{p}</strong>
+                    <strong className="font-semibold text-slate-900">{p}</strong>
                   ) : (
                     p
                   )}
@@ -30,7 +30,7 @@ export default function TransportHdsPage() {
             ))}
           </div>
           <FadeUp>
-            <div className="rounded-2xl border border-white/10 bg-white/[0.02] p-6">
+            <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
               <Image
                 src={assets.marpolPng}
                 alt="MARPOL"
@@ -45,18 +45,18 @@ export default function TransportHdsPage() {
         <div className="grid gap-4 sm:grid-cols-3">
           {transportHds.stats.map((s, i) => (
             <FadeUp key={s.label} delay={0.06 * i}>
-              <div className="rounded-2xl border border-white/10 bg-gradient-to-b from-white/[0.04] to-transparent p-6 text-center">
-                <p className="text-xs font-semibold uppercase tracking-wider text-amber-400">
+              <div className="rounded-2xl border border-slate-200 bg-white p-6 text-center shadow-sm">
+                <p className="text-xs font-semibold uppercase tracking-wider text-red-600">
                   {s.label}
                 </p>
-                <p className="mt-2 text-xl font-semibold text-white">{s.value}</p>
+                <p className="mt-2 text-xl font-semibold text-slate-900">{s.value}</p>
               </div>
             </FadeUp>
           ))}
         </div>
 
         <FadeUp>
-          <div className="relative aspect-[21/9] overflow-hidden rounded-2xl border border-white/10">
+          <div className="relative aspect-[21/9] overflow-hidden rounded-2xl border border-slate-200 shadow-lg">
             <Image
               src={assets.hdsMain}
               alt="Transport HDS"
@@ -70,7 +70,7 @@ export default function TransportHdsPage() {
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {transportHds.gallery.map((src, i) => (
             <FadeUp key={src} delay={0.04 * i}>
-              <div className="relative aspect-[4/3] overflow-hidden rounded-xl border border-white/10">
+              <div className="relative aspect-[4/3] overflow-hidden rounded-xl border border-slate-200 shadow-sm">
                 <Image
                   src={src}
                   alt=""

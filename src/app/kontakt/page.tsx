@@ -19,33 +19,32 @@ export default function KontaktPage() {
       <div className="mx-auto max-w-6xl space-y-16 px-4 py-16 sm:px-6 sm:py-24">
         <div className="grid gap-12 lg:grid-cols-2">
           <FadeUp>
-            <div className="rounded-2xl border border-white/10 bg-white/[0.02] p-8">
-              <p className="text-xs font-semibold uppercase tracking-widest text-amber-400">
+            <div className="rounded-2xl border border-slate-200 bg-white p-8 shadow-sm">
+              <p className="text-xs font-semibold uppercase tracking-widest text-red-600">
                 {kontakt.gama.lines[0]}
               </p>
               <div className="mt-4 flex justify-center sm:justify-start">
                 <Image
-                  src={assets.logoSvg}
+                  src={assets.logoMark}
                   alt="GAMA"
-                  width={200}
-                  height={40}
-                  className="h-16 w-auto"
-                  unoptimized
+                  width={240}
+                  height={56}
+                  className="h-14 w-auto"
                 />
               </div>
-              <h2 className="mt-4 font-[family-name:var(--font-syne)] text-2xl font-bold text-white">
+              <h2 className="mt-4 font-[family-name:var(--font-syne)] text-2xl font-bold text-slate-900">
                 {kontakt.gama.lines[1]}
               </h2>
-              <p className="mt-1 text-sm font-medium text-slate-400">
+              <p className="mt-1 text-sm font-medium text-slate-600">
                 {kontakt.gama.name}
               </p>
-              <p className="mt-6 text-slate-300">{kontakt.gama.address}</p>
+              <p className="mt-6 text-slate-800">{kontakt.gama.address}</p>
               <ul className="mt-6 space-y-3">
                 {kontakt.gama.phones.map((ph) => (
                   <li key={ph.tel}>
                     <a
                       href={`tel:${ph.tel}`}
-                      className="text-amber-400 transition-colors hover:text-amber-300"
+                      className="text-red-600 transition-colors hover:text-red-700"
                     >
                       {ph.label} {ph.number}
                     </a>
@@ -56,7 +55,7 @@ export default function KontaktPage() {
           </FadeUp>
 
           <FadeUp delay={0.08}>
-            <div className="rounded-2xl border border-white/10 bg-white/[0.02] p-8">
+            <div className="rounded-2xl border border-slate-200 bg-white p-8 shadow-sm">
               <div className="flex justify-center sm:justify-start">
                 <Image
                   src={assets.marpolLogoSvg}
@@ -67,21 +66,21 @@ export default function KontaktPage() {
                   unoptimized
                 />
               </div>
-              <h2 className="mt-4 font-[family-name:var(--font-syne)] text-2xl font-bold text-white">
+              <h2 className="mt-4 font-[family-name:var(--font-syne)] text-2xl font-bold text-slate-900">
                 {kontakt.marpol.brand}
               </h2>
-              <p className="mt-1 text-sm font-medium text-slate-400">
+              <p className="mt-1 text-sm font-medium text-slate-600">
                 {kontakt.marpol.name}
               </p>
-              <p className="mt-6 text-slate-300">{kontakt.marpol.address}</p>
+              <p className="mt-6 text-slate-800">{kontakt.marpol.address}</p>
               <ul className="mt-6 space-y-4">
                 {kontakt.marpol.lines.map((line) => (
                   <li key={line.tel}>
                     <a
                       href={`tel:${line.tel}`}
-                      className="block text-amber-400 transition-colors hover:text-amber-300"
+                      className="block text-red-600 transition-colors hover:text-red-700"
                     >
-                      <span className="text-slate-500">{line.label}: </span>
+                      <span className="text-slate-600">{line.label}: </span>
                       tel.: {line.number}
                     </a>
                   </li>
@@ -92,11 +91,11 @@ export default function KontaktPage() {
         </div>
 
         <FadeUp>
-          <div className="overflow-hidden rounded-2xl border border-white/10">
+          <div className="overflow-hidden rounded-2xl border border-slate-200 shadow-md">
             <iframe
               title={kontakt.mapQuery}
               src={mapSrc}
-              className="aspect-video w-full min-h-[320px] grayscale contrast-[1.05] sm:min-h-[400px]"
+              className="aspect-video w-full min-h-[320px] sm:min-h-[400px]"
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
             />

@@ -3,11 +3,11 @@ import { site } from "@/lib/content";
 
 export function SiteFooter() {
   return (
-    <footer className="mt-auto border-t border-white/10 bg-[#05070c]">
+    <footer className="mt-auto border-t border-slate-200 bg-white">
       <div className="mx-auto flex max-w-6xl flex-col gap-8 px-4 py-14 sm:flex-row sm:items-start sm:justify-between sm:px-6">
         <div>
-          <p className="text-sm font-semibold text-white">GAMA SP Z O.O.</p>
-          <p className="mt-2 text-sm leading-relaxed text-slate-400">
+          <p className="text-sm font-semibold text-slate-900">GAMA SP Z O.O.</p>
+          <p className="mt-2 text-sm leading-relaxed text-slate-600">
             83-010 Straszyn
             <br />
             ul. Zachodnia 27B
@@ -18,23 +18,23 @@ export function SiteFooter() {
             href={site.facebook}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-sm text-slate-400 transition-colors hover:text-amber-400"
+            className="text-sm text-slate-600 transition-colors hover:text-red-600"
           >
             Facebook
           </a>
           <Link
             href="/kontakt"
-            className="text-sm text-slate-400 transition-colors hover:text-amber-400"
+            className="text-sm text-slate-600 transition-colors hover:text-red-600"
           >
             Kontakt
           </Link>
         </div>
       </div>
-      <div className="border-t border-white/5 py-6 text-center text-xs text-slate-600">
+      <div className="border-t border-slate-100 py-6 text-center text-xs text-slate-500">
         © {new Date().getFullYear()} GAMA — treści zgodnie z{" "}
         <a
           href={site.legacy}
-          className="underline decoration-white/20 underline-offset-2 hover:text-slate-400"
+          className="underline decoration-slate-300 underline-offset-2 hover:text-slate-800"
         >
           gama-gdansk.pl
         </a>

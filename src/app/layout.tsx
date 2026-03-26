@@ -29,7 +29,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pl" className={`${dmSans.variable} ${syne.variable} h-full`}>
-      <body className="flex min-h-full flex-col antialiased">
+      <body className="flex min-h-full flex-col bg-[#f4f6f9] antialiased">
         <SiteHeader />
         {children}
         <SiteFooter />

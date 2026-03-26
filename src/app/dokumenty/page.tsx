@@ -25,18 +25,18 @@ export default function DokumentyPage() {
                 href={doc.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group block overflow-hidden rounded-2xl border border-white/10 bg-white/[0.02] transition-colors hover:border-amber-400/40"
+                className="group block overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition-shadow hover:border-red-200 hover:shadow-md"
               >
-                <div className="relative aspect-[3/4] bg-[#0f1419]">
+                <div className="relative aspect-[3/4] bg-slate-100">
                   <Image
                     src={doc.href}
                     alt={doc.title}
                     fill
-                    className="object-cover opacity-90 transition-opacity group-hover:opacity-100"
+                    className="object-cover opacity-95 transition-opacity group-hover:opacity-100"
                     sizes="(max-width: 1024px) 100vw, 33vw"
                   />
                 </div>
-                <p className="border-t border-white/10 px-4 py-4 text-center text-sm font-medium text-white">
+                <p className="border-t border-slate-100 px-4 py-4 text-center text-sm font-medium text-slate-900">
                   {doc.title}
                 </p>
               </a>
