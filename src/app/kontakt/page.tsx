@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { FadeUp } from "@/components/FadeUp";
+import { LogoGama } from "@/components/LogoGama";
 import { PageHero } from "@/components/PageHero";
 import { assets, kontakt } from "@/lib/content";
 
@@ -24,13 +25,7 @@ export default function KontaktPage() {
                 {kontakt.gama.lines[0]}
               </p>
               <div className="mt-4 flex justify-center sm:justify-start">
-                <Image
-                  src={assets.logoMark}
-                  alt="GAMA"
-                  width={240}
-                  height={56}
-                  className="h-14 w-auto"
-                />
+                <LogoGama size="lg" />
               </div>
               <h2 className="mt-4 font-[family-name:var(--font-syne)] text-2xl font-bold text-slate-900">
                 {kontakt.gama.lines[1]}

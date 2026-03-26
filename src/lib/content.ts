@@ -18,8 +18,6 @@ export const nav = [
 ] as const;
 
 export const assets = {
-  /** Lokalne logo (PNG) — czytelny kontrast na jasnym tle */
-  logoMark: "/logo-gama.png",
   logoSvg: "https://gama-gdansk.pl/wp-content/uploads/2022/04/logo-gama.svg",
   heroStrip: "https://gama-gdansk.pl/wp-content/uploads/2022/04/gama-pasek.jpg",
   homeTruck: "https://gama-gdansk.pl/wp-content/uploads/2022/04/IMG_E8422.jpg",

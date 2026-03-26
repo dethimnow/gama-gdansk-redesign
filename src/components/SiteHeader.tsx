@@ -1,11 +1,11 @@
 "use client";
 
-import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
-import { assets, nav, site } from "@/lib/content";
+import { LogoGama } from "@/components/LogoGama";
+import { nav, site } from "@/lib/content";
 
 export function SiteHeader() {
   const pathname = usePathname();
@@ -16,16 +16,11 @@ export function SiteHeader() {
       <div className="mx-auto flex h-[4.25rem] max-w-6xl items-center justify-between gap-4 px-4 sm:px-6">
         <Link
           href="/"
-          className="flex shrink-0 items-center gap-2 rounded-lg outline-offset-4 focus-visible:outline focus-visible:outline-2 focus-visible:outline-red-600"
+          aria-label={`${site.name} — strona główna`}
+          className="flex shrink-0 items-center rounded-lg py-1 outline-offset-4 focus-visible:outline focus-visible:outline-2 focus-visible:outline-red-600"
         >
-          <Image
-            src={assets.logoMark}
-            alt={site.name}
-            width={220}
-            height={48}
-            className="h-9 w-auto sm:h-10"
-            priority
-          />
+          <LogoGama size="sm" className="sm:hidden" />
+          <LogoGama size="md" className="hidden sm:inline-flex" />
         </Link>
 
         <nav className="hidden items-center gap-1 lg:flex" aria-label="Główne">
